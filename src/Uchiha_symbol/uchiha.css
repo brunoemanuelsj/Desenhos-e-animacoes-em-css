@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+}
+
+.redBall {
+    position: absolute;
+    background-color: rgb(204, 0, 0);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.whiteBall {
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 170px;
+    height: 170px;
+    border-radius: 180px 0 180px 0;
+    margin-top: 135px;
+    border: solid black 20px;
+    margin-left: calc((100% )/2 - 104px);
+    transform: rotate(45deg);
+}
+
+.ret{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    margin-left: 129px;
+    margin-top: 280px;
+}
+
+.sharingan {
+    display: inline-block;
+    margin-top: 80px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: royalblue;
+    margin-left: calc((100% - 40px)/2 - 150px);
+}
+.centro {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    margin-top: calc(50% - 3px);
+    margin-left: calc(50% - 3px);
+    border-radius: 100%;
+}
+
+.s1 {
+    margin-top: -3px;
+    margin-left: 54px; 
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border-bottom: solid 80px transparent;
+    border-radius: 0 0 0 100%;
+    transform: rotate(40deg);
+}
+.s2 {
+    margin-top: 45px;
+    margin-left: 153px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border-bottom: solid 80px transparent;
+    border-radius: 0 0 0 100%;
+    transform: rotate(160deg);
+}
+.s3 {
+    margin-top: 118px;
+    margin-left: 71px;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    background-color: transparent;
+    border-bottom: solid 80px transparent;
+    border-radius: 0 0 0 100%;
+    transform: rotate(280deg);
+}
+
+.sharingan:hover .whiteBall{
+    transform: translateY(-70px) translateX(19px);
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    border-radius: 100%;
+    transition: transform 1s, background-color 0.5s, border-radius 2s, width 1s, height 1s;
+}
+
+.sharingan:hover .ret{
+    transform: translateY(-150px);
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    border-radius: 100%;
+    transition: background-color 0.5s, width 3s, height 3s, transform 0.5s, border-radius 1s;
+}
+.sharingan:hover .s1{
+    border-bottom: solid 80px black;
+    transition: 2.5s;
+}
+.sharingan:hover .s2{
+    border-bottom: solid 80px black;
+    transition: 2.5s;
+}
+.sharingan:hover .s3{
+    border-bottom: solid 80px black;
+    transition: 2.5s;
+}
+
+.sharingan:hover .centro{
+    width: 40px;
+    height: 40px;
+    transform: translateX(-17px) translateY(-17px);
+    background-color: rgb(204, 0, 0);
+    transition: 2.5s;
+}
+.sharingan:hover{
+    transition: 3s;
+    transform: rotate(1065deg);
+}

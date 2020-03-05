@@ -1,0 +1,96 @@
+body {
+    margin-left: 340px;
+    background-color: cornsilk;
+}
+
+.part1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 295px 0 295px 0;
+    margin-top: 80px;
+    margin-left: 180px;
+    transform: rotate(-45deg);
+}
+
+.part2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 100% 0 100% 0;
+    margin-top: 133px;
+    margin-left: 372px;
+    transform: rotate(-4deg);
+}
+
+.part3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 100% 0 100% 0;
+    margin-top: 133px;
+    margin-left: -12px;
+    transform: rotate(-86deg);
+}
+
+.adidas2 {
+    position: absolute;
+    margin-top: 270px;
+    width: 1000px;
+    height: 24px;
+    background-color: cornsilk;
+    box-shadow: 0px 48px 0px cornsilk,
+                0px 96px 0px cornsilk;
+
+}
+
+.adidas2::after{
+    content: "odidos";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 180px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 65px;
+    width: 500px;
+    height: 0px;
+    width: auto;
+    color: black;
+}
+
+.font{
+    position: absolute;
+    margin-top: 499px;
+    margin-left: 153px;
+    width: 30px;
+    height: 105px;
+    background-color: black;
+    box-shadow: 435px 0px 0 black;
+}
+
+.animation {
+    position: absolute;
+    margin-left: 73px;
+    width: 665px;
+    height: 443px;
+}
+
+.animation:hover .part1{
+    transition: 1s;
+    margin-top: 40px;
+}
+
+.animation:hover .part2{
+    transition: 1s;
+    margin-top: 113px;
+    margin-left: 392px;
+}
+
+.animation:hover .part3{
+    transition: 1s;
+    margin-top: 113px;
+    margin-left: -32px;
+}

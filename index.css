@@ -1,0 +1,145 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: rgb(8, 12, 37);
+}
+
+h1{
+    text-align: left;
+}
+
+footer {
+    text-align: left;
+    font-size: 20px;
+    margin-top: calc(40%);
+}
+
+.line{
+    position: absolute;
+    margin-top: 125px;
+    margin-left: calc(50% - 500px);
+    width: 1000px;
+    height: 1px;
+    border-top: solid white 4px;
+}
+
+.adidas{
+    position: absolute;
+    background-image: url(src/adidas.jpg);
+    width: 170px;
+    height: 137px;
+    margin-left:  calc(50% - 500px);
+    margin-top: 206px;
+}
+
+.case1{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(8, 12, 37);
+    border: solid white 5px;
+    margin-top: -100px;
+    margin-left: 66px;
+}
+
+.item1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 118, 29);
+    margin-top: -95px;
+    margin-left: 71px;
+    animation: girar 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.adidas:hover .item1{
+    animation-play-state: running;
+}
+
+@keyframes girar{
+    100%{ transform: rotateY(180deg);}
+}
+
+.uchiha{
+    position: absolute;
+    background-image: url(src/uchiha.jpg);
+    width: 170px;
+    height: 137px;
+    margin-left:  calc(50% - 85px);
+    margin-top: 206px;
+}
+
+.case3{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(8, 12, 37);
+    border: solid white 5px;
+    margin-top: -110px;
+    margin-left: 56px;
+}
+
+.item3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: rgb(230, 0, 0);
+    margin-top: -105px;
+    margin-left: 61px;
+    animation: girar 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.uchiha:hover .item3{
+    animation-play-state: running;
+}
+
+.bmw{
+    position: absolute;
+    background-image: url(src/bmw.jpg);
+    width: 170px;
+    height: 137px;
+    margin-left:  calc(50% + 327px);
+    margin-top: 206px;
+}
+
+.case2{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(8, 12, 37);
+    border: solid white 5px;
+    margin-top: -100px;
+    margin-left: 66px;
+}
+
+.item2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: rgb(94, 115, 255);
+    margin-top: -95px;
+    margin-left: 71px;
+    animation: girar 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.bmw:hover .item2{
+    animation-play-state: running;
+}
