@@ -1,60 +1,75 @@
 body {
-    margin-left: 340px;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: cornsilk;
+    position: relative;
+}
+
+.anim{
+    width: 900px;
+    height: 900px;
 }
 
 .part1 {
-    position: absolute;
     width: 300px;
+    position: relative;
     height: 300px;
     background-color: black;
     border-radius: 295px 0 295px 0;
     margin-top: 80px;
-    margin-left: 180px;
+    margin-left: 182px;
     transform: rotate(-45deg);
 }
 
 .part2{
-    position: absolute;
     width: 300px;
+    position: relative;
     height: 300px;
     background-color: black;
     border-radius: 100% 0 100% 0;
-    margin-top: 133px;
-    margin-left: 372px;
+    margin-left: 375px;
+    margin-top: -248px;
     transform: rotate(-4deg);
 }
 
 .part3 {
-    position: absolute;
     width: 300px;
     height: 300px;
+    position: relative;
     background-color: black;
     border-radius: 100% 0 100% 0;
-    margin-top: 133px;
-    margin-left: -12px;
+    margin-top: -300px;
+    margin-left: -10px;
+    z-index: -1;
     transform: rotate(-86deg);
 }
 
 .adidas2 {
-    position: absolute;
-    margin-top: 270px;
-    width: 1000px;
+    position: relative;
+    width: 665px;
     height: 24px;
+    margin-top: -250px;
     background-color: cornsilk;
+    z-index: 1;
     box-shadow: 0px 48px 0px cornsilk,
                 0px 96px 0px cornsilk;
-
-}
+} 
 
 .adidas2::after{
+    position: absolute;
     content: "odidos";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 180px;
-    position: absolute;
-    margin-top: 150px;
-    margin-left: 65px;
+    margin-left: 0px;
+    margin-top: 200px;
     width: 500px;
     height: 0px;
     width: auto;
@@ -62,9 +77,8 @@ body {
 }
 
 .font{
-    position: absolute;
-    margin-top: 499px;
-    margin-left: 153px;
+    margin-left: 96px;
+    margin-top: 256px;
     width: 30px;
     height: 105px;
     background-color: black;
@@ -72,25 +86,25 @@ body {
 }
 
 .animation {
-    position: absolute;
-    margin-left: 73px;
     width: 665px;
     height: 443px;
+    z-index: -1;
 }
 
 .animation:hover .part1{
     transition: 1s;
+    position: absolute;
     margin-top: 40px;
 }
 
 .animation:hover .part2{
     transition: 1s;
-    margin-top: 113px;
+    margin-top: -113px;
     margin-left: 392px;
 }
 
 .animation:hover .part3{
     transition: 1s;
-    margin-top: 113px;
+    margin-top: -340px;
     margin-left: -32px;
 }

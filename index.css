@@ -1,17 +1,34 @@
 body{
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: nowrap;
     color: white;
-    background-color: rgb(8, 12, 37);
+    background: linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224));
+    font-family: 'Roboto Mono', monospace;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 h1{
-    text-align: left;
+    width: 600px;
+    height: auto;
+    margin-left: 10px;
 }
 
 footer {
-    text-align: left;
-    font-size: 20px;
-    margin-top: calc(40%);
+    width: 600px;
+    height: auto;
+    margin-left: 10px;
+    justify-self: flex-end;
+}
+
+.animations{
+    width: 100%;
+    height: 100%;
 }
 
 .line{
@@ -42,6 +59,7 @@ footer {
     border: solid white 5px;
     margin-top: -100px;
     margin-left: 66px;
+    perspective: 1em;
 }
 
 .item1{
@@ -53,7 +71,7 @@ footer {
     background-color: rgb(255, 118, 29);
     margin-top: -95px;
     margin-left: 71px;
-    animation: girar 0.5s;
+    animation: girar 1s;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
